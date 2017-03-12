@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Load the submodules
+git submodule init
+git submodule update
+
 # Clear out whatever rubbish is already there
 rm -rv ~/.vimrc ~/.vim
 
