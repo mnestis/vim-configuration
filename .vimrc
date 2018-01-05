@@ -3,9 +3,6 @@
 "   Created: 2017-03-12
 "
 
-" Enable pathogen:
-execute pathogen#infect()
-
 " Enable filetype based plugins and indentation
 filetype plugin indent on
 
@@ -29,10 +26,6 @@ set showmatch
 
 " Enable incremental search 
 set incsearch
-
-" Settings for vim-flake8
-" (It checks python files meet PEP-8)
-autocmd BufWritePost *.py call Flake8()
 
 if &term =~ '256color'
 " Disable Background Color Erase (BCE) so that color schemes
